@@ -1,8 +1,18 @@
-# DP_score_mathematical_model
+# Mathematical Model for Calculation of sporty score
+#### This Repisitory serves as open source demonstration of my own mathematical model for calculation of estimation of effort or actual form in form of point score of various sportsmans at the level of single sporting activity. This model is excluded from my Master’s Thesis: Data processing from sensor systems in the field of sports. Model can be freely used in future studies in the field of evaluating athletic form.
+
+## Mathematic model description
+* HRS - Heart Rate Score
+* RRS - Respiratory Rate Score
+
+![Alt text](math_model_1.png?raw=true "Title")
+
+**Sporty form score for Athlete in Activity**
+
+S = ((HRS + RRS)) ⁄ 2
+
 ## Variables description
 **RPE – Heart Rate table -T_1**
-
-![Alt text]("relative/path/to/obrazok rovnice.jpg"?raw=true "Title")
 
 RPE intensity indexes | From - Percentage of maximum heart rate | To - Percentage of maximum heart rate
  ------------ | ------------- | -------------
@@ -31,7 +41,7 @@ None | 	20% | 	30%
 **PMX – Percentage to max Sensor unit rate**
 * APSa_i(unit) - Average Sensor unit value in Activity Part
 * MR(unit) - Maximum rate for Sensor unit
-* PMX=(APSa_i(unit)⁄MR(unit))*100
+* PMX = (APSa_i(unit) ⁄ MR(unit)) * 100
 
 **OI – Optimal table index**
 Index of row in table T_k, where column RPE intensity indexes inludes APr_i
@@ -52,4 +62,23 @@ Index of row in tableT_k, where PMX is between From and To columns of Percentage
 * APr_i – Activity Part RPE intensity index
 * Ar – Activity RPE intensity index
 
+## Example of calculation
+**Initial values**
 
+for 2 parts of activities,Ar=〖APr〗_0+〖APr〗_1=90
+  * 20 minutes of stretching with RPE intensity index 2, 〖APr〗_0=2*20=40
+    * with HR PMX = 55%
+    * with RR PMX = 62%
+  * 10 minutes of running with RPE intensity index 5, 〖APr〗_1=5*10=50
+    * with HR PMX = 88%
+    * with RR PMX = 91%
+
+**Formula usage example**
+* HRS = ((80 + (OI(T_1, APr_0) - RI(T_1, PMX(APSa_0("heart_rate"), MR("heart_rate")))) * 10) * (APr_0 / Ar)) + ((80+(OI(T_1, APr_1) - RI(T_1, PMX(APSa_1("heart_rate" ), MR("heart_rate")))) * 10) * (APr_1 / Ar))
+* RRS = ((80 + (OI(T_2, APr_0) - RI(T_2, PMX(APSa_0("respiratory_rate"), MR("heart_rate")))) * 10) * (APr_0 / Ar)) + ((80 + (OI(T_2, APr_1) - RI(T_2, PMX(APSa_1("respiratory_rate"), MR("heart_rate")))) * 10) * (APr_1 / Ar))
+* S=((HRS + RRS)) ⁄ 2
+
+**Real usage example**
+* HRS = ((80 + (3-3) * 10) * (40 / 90)) + ((80 + (5-6) * 10) * (50 / 90)) = 74,44points
+* RRS = ((80 + (3-4) * 10) * (40 / 90)) + ((80 + (5-7) * 10) * (50 / 90)) = 64,44points
+* **S = ((74.44 + 64.44)) ⁄ 2 = 69.44points**
