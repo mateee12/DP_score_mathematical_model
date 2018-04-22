@@ -49,3 +49,5 @@ Index of row in tableT_k, where PMX is between From and To columns of Percentage
 * APc – Activity parts count
 * APr_i – Activity Part RPE intensity index
 * Ar – Activity RPE intensity index
+
+
