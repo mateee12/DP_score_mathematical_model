@@ -2,6 +2,8 @@
 ## Variables description
 **RPE – Heart Rate table -T_1**
 
+![Alt text]("relative/path/to/obrazok rovnice.jpg"?raw=true "Title")
+
 RPE intensity indexes | From - Percentage of maximum heart rate | To - Percentage of maximum heart rate
  ------------ | ------------- | -------------
 None	 | 0%	 | 20%
