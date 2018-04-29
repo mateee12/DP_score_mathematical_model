@@ -55,13 +55,13 @@ Index of row in tableT_k, where PMX is between From and To columns of Percentage
 
 **PS_i**=80+((OI(T_k, Apri_i) - RI(T_k, PMX(APSa_i(unit), MR(unit))))*10)
 
-**Heart Rate Score – HRS**
+**Heart Rate Score – HRS, using heart rate sensor data**
 * APc – Activity parts count
 * APr_i – Activity Part RPE intensity
 * APri_i – Activity Part RPE intensity index
 * Ar – Activity RPE intensity index
 
-**Respiratory Rate Score – RRS**
+**Respiratory Rate Score – RRS, using respiratory rate sensor data**
 * APc – Activity parts count
 * APr_i – Activity Part RPE intensity
 * APri_i – Activity Part RPE intensity index
