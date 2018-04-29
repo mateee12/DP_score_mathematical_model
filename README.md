@@ -1,6 +1,9 @@
 # Mathematical Model for Calculation of sporty score
 #### This Repisitory serves as open source demonstration of my own mathematical model for calculation of estimation of effort or actual form of various sportsmans at the level of single sporting activity based on global RPE and received data from sensor devices measuring heart rate and respiratory rate. This model is excluded from my Master’s Thesis: Data processing from sensor systems in the field of sports. Model can be freely used in future studies in the field of evaluating athletic form.
 
+## MATLAB example implementation
+dir: score_mathematical_model
+
 ## Mathematic model description
 * HRS - Heart Rate Score
 * RRS - Respiratory Rate Score
