@@ -79,8 +79,8 @@ for 2 parts of activities,Ar=〖APr〗_0+〖APr〗_1=90
     * with RR PMX = 91%
 
 **Formula usage example**
-* HRS = ((80 + (OI(T_1, APr_0) - RI(T_1, PMX(APSa_0("heart_rate"), MR("heart_rate")))) * 10) * (APr_0 / Ar)) + ((80+(OI(T_1, APr_1) - RI(T_1, PMX(APSa_1("heart_rate" ), MR("heart_rate")))) * 10) * (APr_1 / Ar))
-* RRS = ((80 + (OI(T_2, APr_0) - RI(T_2, PMX(APSa_0("respiratory_rate"), MR("heart_rate")))) * 10) * (APr_0 / Ar)) + ((80 + (OI(T_2, APr_1) - RI(T_2, PMX(APSa_1("respiratory_rate"), MR("heart_rate")))) * 10) * (APr_1 / Ar))
+* HRS = ((80 + (OI(T_1, APri_0) - RI(T_1, PMX(APSa_0("heart_rate"), MR("heart_rate")))) * 10) * (APr_0 / Ar)) + ((80+(OI(T_1, APri_1) - RI(T_1, PMX(APSa_1("heart_rate" ), MR("heart_rate")))) * 10) * (APr_1 / Ar))
+* RRS = ((80 + (OI(T_2, APri_0) - RI(T_2, PMX(APSa_0("respiratory_rate"), MR("heart_rate")))) * 10) * (APr_0 / Ar)) + ((80 + (OI(T_2, APri_1) - RI(T_2, PMX(APSa_1("respiratory_rate"), MR("heart_rate")))) * 10) * (APr_1 / Ar))
 * S=((HRS + RRS)) ⁄ 2
 
 **Real usage example**
