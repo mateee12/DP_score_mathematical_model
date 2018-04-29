@@ -44,22 +44,27 @@ None | 	20% | 	30%
 * PMX = (APSa_i(unit) ⁄ MR(unit)) * 100
 
 **OI – Optimal table index**
+
 Index of row in table T_k, where column RPE intensity indexes inludes APr_i
 
 **RI– Real table index**
+
 Index of row in tableT_k, where PMX is between From and To columns of Percentage of maximum rate
 
 **PS_i** - partial score
-**PS_i**=80+((OI(T_k, Apr_i) - RI(T_k, PMX(APSa_i(unit), MR(unit))))*10)
+
+**PS_i**=80+((OI(T_k, Apri_i) - RI(T_k, PMX(APSa_i(unit), MR(unit))))*10)
 
 **Heart Rate Score – HRS**
 * APc – Activity parts count
-* APr_i – Activity Part RPE intensity index
+* APr_i – Activity Part RPE intensity
+* APri_i – Activity Part RPE intensity index
 * Ar – Activity RPE intensity index
 
 **Respiratory Rate Score – RRS**
 * APc – Activity parts count
-* APr_i – Activity Part RPE intensity index
+* APr_i – Activity Part RPE intensity
+* APri_i – Activity Part RPE intensity index
 * Ar – Activity RPE intensity index
 
 ## Example of calculation
